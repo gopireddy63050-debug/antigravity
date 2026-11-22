@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="slvFlameGrad" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#CB1D1D" />
+      <stop offset="50%" stop-color="#EF6414" />
+      <stop offset="100%" stop-color="#FFAA28" />
+    </linearGradient>
+    <filter id="slvGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="100" fill="#0E0505" />
+  <rect x="15" y="15" width="470" height="470" rx="85" fill="none" stroke="#2D0D0D" stroke-width="4" />
+  <rect x="25" y="25" width="450" height="450" rx="75" fill="none" stroke="#EF6414" stroke-opacity="0.3" stroke-width="2" />
+
+  <!-- Sizzling Wok / Bowl Base -->
+  <path d="M120 300 C150 410, 350 410, 380 300 Z" fill="#CB1D1D" stroke="#EF6414" stroke-width="5" />
+  <ellipse cx="250" cy="300" rx="130" ry="25" fill="#FFAA28" opacity="0.9" />
+
+  <!-- Tri-Flame of Flavor -->
+  <path d="M250 110 C210 180, 200 240, 250 280 C300 240, 290 180, 250 110 Z" fill="url(#slvFlameGrad)" filter="url(#slvGlow)" />
+  <path d="M200 170 C170 220, 180 260, 215 285 C230 250, 220 210, 200 170 Z" fill="#CB1D1D" />
+  <path d="M300 170 C330 220, 320 260, 285 285 C270 250, 280 210, 300 170 Z" fill="#EF6414" />
+
+  <!-- SLV Bold Initials in Rozha / Serif aesthetic -->
+  <text x="250" y="375" text-anchor="middle" font-family="'Rozha One', 'Roboto Serif', Georgia, serif" font-size="78" font-weight="900" fill="#FFFFFF" letter-spacing="4">SLV</text>
+  <text x="250" y="440" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#FFAA28" letter-spacing="8">FOOD COURT</text>
+</svg>
